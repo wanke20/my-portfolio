@@ -38,7 +38,7 @@ export const projectData = [
 
 const Projects = () => {
   return (
-    <div className="projects-container mt-80 mb-20 text-white">
+    <div className="projects-container mt-80 text-white">
       <h2 className="text-3xl mb-16">Projects</h2>
       <div className="grid grid-cols-3 gap-6 projects-grid">
         {projectData &&

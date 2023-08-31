@@ -3,9 +3,11 @@ import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 import SuccessButton from "./SuccessButton";
 
-let public_id: string = process.env.NEXT_PUBLIC_ID ?? "";
-let template_id: string = process.env.NEXT_PUBLIC_TEMPLATE_ID ?? "";
-let public_key: string = process.env.NEXT_PUBLIC_KEY ?? "";
+let [public_id, template_id, public_key]: string[] = [
+  process.env.NEXT_PUBLIC_ID ?? "",
+  process.env.NEXT_PUBLIC_TEMPLATE_ID ?? "",
+  process.env.NEXT_PUBLIC_KEY ?? "",
+];
 
 const FormPage = () => {
   const form: any = useRef();

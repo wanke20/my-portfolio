@@ -3,7 +3,7 @@
 const Footer = () => {
   return (
     <>
-      <hr className="border-zinc-400" />
+      <hr className="mt-24 border-zinc-400" />
       <div className="text-zinc-100 mt-10">
         <p>© {new Date().getFullYear()} Kenneth's Portfolio</p>
         <div className="social_icons">
