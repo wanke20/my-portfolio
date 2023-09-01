@@ -19,7 +19,7 @@ const FormPage = () => {
     const timer = setTimeout(() => {
       setShowPopup(false);
       setAllowSubmit(true);
-    }, 2000);
+    }, 2200);
 
     return () => clearTimeout(timer);
   }, [showPopup]);
