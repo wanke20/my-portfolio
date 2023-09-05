@@ -1,4 +1,5 @@
 import { CSSProperties, useState } from "react";
+import './Success.css';
 
 const SuccessButton = ({ bgcolor }: any) => {
   const [counter, setCounter] = useState<number>(100);
@@ -24,7 +25,7 @@ const SuccessButton = ({ bgcolor }: any) => {
     <div style={styles.popup}>
       <p className="ml-3 mb-5">✅  Message Sent!</p>
       <div style={containerStyles}>
-        <div style={fillerStyles} />
+        <div className="filler-styles" />
       </div>
     </div>
   );

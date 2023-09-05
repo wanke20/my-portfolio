@@ -1,52 +1,46 @@
+"use client";
+import { useRouter } from "next/navigation";
+
+const skillList = [
+  { name: "CSS", logo: "logos/css-logo.webp" },
+  { name: "TypeScript", logo: "logos/ts-logo.jpeg" },
+  { name: "JavaScript", logo: "logos/js-logo.png" },
+  { name: "Java", logo: "logos/java-logo.png" },
+  { name: "NodeJS", logo: "logos/nodejs-logo.png" },
+  { name: "React", logo: "logos/react-logo.png" },
+  { name: "NextJS", logo: "logos/nextjs-logo.webp" },
+  { name: "TailwindCSS", logo: "logos/tailwind-logo.png" },
+  { name: "MongoDB", logo: "logos/mongo.png" },
+  { name: "SQL", logo: "logos/sql.jpeg" },
+];
+
 const Skills = () => {
+  const router = useRouter();
+
   return (
-    <div className="skills-container">
-      <h1 className="my-16 mt-28 text-3xl">Skills</h1>
-      <div className="flex my-10 grid-skills">
-        <div className="flex items-center rounded border-2 border-black px-4 py-3 mr-16 skill-card html">
-          <i className="text-brand-html mr-2 fa-brands fa-html5 fa-xl html-icon"></i>
-          <p className="text-xs">HTML</p>
-        </div>
-        <div className="flex items-center rounded border-2 border-black px-4 py-3 mr-16 sskill-card css">
-          <i className="text-brand-css mr-2 fa-brands fa-css3-alt fa-xl css-icon"></i>
-          <p className="text-xs">CSS</p>
-        </div>
-        <div className="flex items-center rounded border-2 border-black px-4 py-3 mr-16 sskill-card js">
-          <i className="text-brand-js mr-2 fa-brands fa-js-square fa-xl js-icon"></i>
-          <p className="text-xs">JavaScript</p>
-        </div>
-        <div className="flex items-center rounded border-2 border-black px-4 py-3 mr-16 sskill-card react">
-          <i className="text-brand-react mr-2 fa-brands fa-react fa-xl react-icon"></i>
-          <p className="text-xs">React</p>
-        </div>
-        <div className="flex items-center rounded border-2 border-black px-4 py-3 mr-16 sskill-card node">
-          <i className="text-brand-node mr-2 fa-brands fa-node-js fa-xl node-icon"></i>
-          <p className="text-xs">Node</p>
-        </div>
-        <div className="flex items-center rounded border-2 border-black px-4 py-3 mr-16 sskill-card python">
-          <img
-            src="python-logo-only.png"
-            className="mr-2"
-            style={{ width: 27, height: 27 }}
-          ></img>
-          <p className="text-xs">Python</p>
-        </div>
-      </div>
+    <>
+      <div className="mt-64" />
       <div className="flex items-center">
-        <div className="flex items-center rounded border-2 border-black px-4 py-5 mr-16 skill-card java">
-          <i className="text-brand-html mr-2 fa-brands fa-java fa-xl html-icon"></i>
-          <p className="text-xs">Java</p>
+        <div className="w-1/3">
+          <h1 className="font-bold text-4xl text-slate-900 mb-8">My Skills</h1>
+          <p className="mb-5">
+            As a full-stack developer, I possess a comprehensive understanding
+            of both front-end and back-end technologies, bridging the gap
+            between graphical design and technical implementation.
+          </p>
+          <button className="rounded border-2 border-black px-4 py-2 hover:bg-slate-100"
+          onClick={() => router.push('/about')}>
+            Read My Intro
+          </button>
         </div>
-        <div className="flex items-center rounded border-2 border-black px-4 py-3 mr-16 sskill-card typescript">
-          <img
-            src="ts-logo-128.png"
-            className="mr-2"
-            style={{ width: 27, height: 27 }}
-          ></img>
-          <p className="text-xs">TypeScript</p>
+        <div className="grid grid-cols-4 ml-20">
+          {skillList &&
+            skillList.map((skill) => (
+              <img src={skill.logo} className="h-16 w-auto mb-8 mr-20" />
+            ))}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

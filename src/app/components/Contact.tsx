@@ -1,6 +1,5 @@
 import { useState } from "react";
 import FormPage from "./FormPage";
-import SuccessButton from "./SuccessButton";
 
 const Contact = () => {
   "use client";

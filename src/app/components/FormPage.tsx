@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
-import SuccessButton from "./SuccessButton";
+import SuccessButton from "./SuccessButton/Success";
 
 let [public_id, template_id, public_key]: string[] = [
   process.env.NEXT_PUBLIC_ID ?? "",
