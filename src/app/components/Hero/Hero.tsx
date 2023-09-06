@@ -1,4 +1,3 @@
-
 import DownloadResume from './DownloadResume';
 
 const Hero = () => {

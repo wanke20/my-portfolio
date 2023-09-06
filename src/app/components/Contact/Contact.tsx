@@ -1,5 +1,6 @@
 import { useState } from "react";
 import FormPage from "../FormPage/FormPage";
+import './Contact.css';
 
 const Contact = () => {
   "use client";

@@ -4,7 +4,7 @@ import styled from "styled-components";
 import SuccessPopup from "../SuccessPopup/SuccessPopup";
 import './FormPage.css';
 
-let [public_id, template_id, public_key]: string[] = [
+const [public_id, template_id, public_key]: string[] = [
   process.env.NEXT_PUBLIC_ID ?? "",
   process.env.NEXT_PUBLIC_TEMPLATE_ID ?? "",
   process.env.NEXT_PUBLIC_KEY ?? "",

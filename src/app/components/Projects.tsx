@@ -1,4 +1,4 @@
-export const projectData = [
+const projectData = [
   {
     id: 1,
     title: "Todo List App",
