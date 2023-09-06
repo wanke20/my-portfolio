@@ -9,7 +9,7 @@ const SuccessPopup = () => {
 
   return (
     <div className="popup">
-      <p className="mb-5 ml-3">✅ Message Sent!</p>
+      <p className="email-sent">✅ Message Sent!</p>
       <LoadingBar />
     </div>
   );

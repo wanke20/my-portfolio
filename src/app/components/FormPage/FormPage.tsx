@@ -1,6 +1,5 @@
 import { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
-import styled from "styled-components";
 import SuccessPopup from "../SuccessPopup/SuccessPopup";
 import './FormPage.css';
 
@@ -29,15 +28,14 @@ const FormPage = () => {
     e.preventDefault();
 
     if (allowSubmit) {
-      // emailjs.sendForm(public_id, template_id, form.current, public_key).then(
-      //   (result) => {
-      //     console.log(result.text);
-      //   },
-      //   (error) => {
-      //     console.log(error.text);
-      //   }
-      // );
-      console.log("sendEmail reached");
+      emailjs.sendForm(public_id, template_id, form.current, public_key).then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
       setAllowSubmit(false);
     }
   };

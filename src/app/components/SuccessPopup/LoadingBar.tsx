@@ -1,5 +1,5 @@
-import "./LoadingBar.css";
 import { useState, useEffect } from "react";
+import "./LoadingBar.css";
 
 const LoadingBar = () => {
   const [isLoading, setIsLoading] = useState(false);
