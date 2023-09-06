@@ -1,0 +1,15 @@
+.loading-bar {
+  position: relative;
+  margin-left: 1px;
+  width: 99%;
+  height: 4px;
+  background-color: #0070f3;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 2s ease-out;
+  border-radius: 50px;
+}
+
+.show-loading-bar {
+  transform: scaleX(1);
+}

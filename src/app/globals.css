@@ -30,10 +30,10 @@ body {
   background: linear-gradient(
     to bottom,
     rgb(24,24,27) 0%,
-    rgb(24,24,27) 30%,
-    white 30%,
-    white 60%,
-    rgb(24,24,27) 60%,
+    rgb(24,24,27) 31%,
+    white 31%,
+    white 62%,
+    rgb(24,24,27) 62%,
     rgb(24,24,27) 100%
   );
   margin: 32px;

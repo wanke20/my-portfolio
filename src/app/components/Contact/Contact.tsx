@@ -1,5 +1,5 @@
 import { useState } from "react";
-import FormPage from "./FormPage";
+import FormPage from "../FormPage/FormPage";
 
 const Contact = () => {
   "use client";

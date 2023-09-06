@@ -19,26 +19,32 @@ const Skills = () => {
 
   return (
     <>
-      <div className="mt-64" />
-      <div className="flex items-center">
-        <div className="w-1/3">
-          <h1 className="font-bold text-4xl text-slate-900 mb-8">My Skills</h1>
-          <p className="mb-5">
-            As a full-stack developer, I possess a comprehensive understanding
-            of both front-end and back-end technologies, bridging the gap
-            between graphical design and technical implementation.
-          </p>
-          <button className="rounded border-2 border-black px-4 py-2 hover:bg-slate-100"
-          onClick={() => router.push('/about')}>
-            Read My Intro
-          </button>
+      <div className="mt-60" />
+      <div className="flex flex-col items-center">
+        <div className="flex items-center">
+          <div className="w-1/3 mb-5">
+            <h1 className="font-bold text-4xl text-slate-900 mb-8">
+              My Skills
+            </h1>
+            <p>
+              As a full-stack developer, I possess a comprehensive understanding
+              of both front-end and back-end technologies, bridging the gap
+              between graphical design and technical implementation.
+            </p>
+          </div>
+          <div className="grid grid-cols-4 ml-20">
+            {skillList &&
+              skillList.map((skill) => (
+                <img src={skill.logo} className="h-16 w-auto mb-8 mr-20" />
+              ))}
+          </div>
         </div>
-        <div className="grid grid-cols-4 ml-20">
-          {skillList &&
-            skillList.map((skill) => (
-              <img src={skill.logo} className="h-16 w-auto mb-8 mr-20" />
-            ))}
-        </div>
+        <button
+          className="flex rounded border-2 text-slate-800 border-black bg-[#facc15] justify-center mt-8 px-8 py-4 hover:bg-white"
+          onClick={() => router.push("/about")}
+        >
+          Read More About Me
+        </button>
       </div>
     </>
   );

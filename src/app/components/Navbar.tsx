@@ -1,6 +1,6 @@
 "use client";
 
-import Contact from "./Contact";
+import Contact from "./Contact/Contact";
 import AboutMe from "./About/AboutButton";
 
 const Navbar = () => {
