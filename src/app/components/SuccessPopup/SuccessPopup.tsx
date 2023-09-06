@@ -1,5 +1,5 @@
 import { useState } from "react";
-import LoadingBar from "./loadingBar";
+import LoadingBar from "../LoadingBar/LoadingBar";
 import "./SuccessPopup.css";
 
 const SuccessPopup = () => {
