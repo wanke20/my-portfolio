@@ -26,7 +26,7 @@ const Skills = () => {
             <h1 className="font-bold text-4xl text-slate-900 mb-8">
               My Skills
             </h1>
-            <p>
+            <p className="text-slate-900">
               As a full-stack developer, I possess a comprehensive understanding
               of both front-end and back-end technologies, bridging the gap
               between graphical design and technical implementation.

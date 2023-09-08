@@ -11,7 +11,6 @@ export default function Home() {
       </header>
       <Navbar />
       <div className="mx-10">
-        {/* <main>{children}</main> */}
         <Hero />
         <Skills />
         <Projects />

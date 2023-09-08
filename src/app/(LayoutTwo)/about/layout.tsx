@@ -1,4 +1,4 @@
-import "src/app/globals.css";
+import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
@@ -26,11 +26,7 @@ export default function RootLayout({
           referrerPolicy="no-referrer"
         />
       </head>
-      <body
-        className={`${inter.className} bg-none bg-zinc-900 text-white container mx-auto p-4`}
-      >
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

@@ -1,74 +1,81 @@
-import Image from "next/image";
+import "./AboutPage.css";
 
 const About = () => {
   return (
     <>
-      <h2 className="font-bold mb-20 text-3xl">About Me</h2>
-      <div className="flex flex-about">
-        <div className="about-text w-3/5 mr-12">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            lacinia odio vitae vestibulum. Donec in efficitur leo. Vestibulum
-            nec magna at dui cursus semper non et dolor. Integer ultrices libero
-            sed justo vehicula, at efficitur dui bibendum. Morbi non bibendum
-            erat, vel faucibus est. Praesent nec ornare ante, eget ullamcorper
-            enim. Donec facilisis turpis vel pharetra cursus. Aenean sit amet
-            orci et risus cursus finibus sed eget neque. Nulla facilisi. Mauris
-            suscipit, sem eget sollicitudin egestas, orci arcu rhoncus augue, et
-            varius est purus non ex.
-            <br />
-            <br />
-          </p>
-          <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis unde
-            omnis iste natus error sit voluptatem accusantium doloremque
-            laudantium, totam rem aperiam. Ut enim ad minima veniam, quis
-            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-            aliquid ex ea commodi consequatur. Nemo enim ipsam voluptatem quia
-            voluptas sit aspernatur aut odit aut fugit. Quisque eget nunc eu
-            magna facilisis eleifend. Integer lacinia, elit eu dictum facilisis,
-            nunc mauris posuere eros, vitae convallis elit erat in est. Sed non
-            neque elit. Vestibulum ante ipsum primis in faucibus orci luctus et
-            ultrices posuere cubilia curae.
-            <br />
-            <br />
-          </p>
-          <p>
-            Curabitur pretium, nisl at aliquet sollicitudin, felis elit vehicula
-            arcu, vel tincidunt urna est nec arcu. Suspendisse potenti. Proin id
-            laoreet nisi, quis volutpat sapien. Aliquam erat volutpat.
-            Pellentesque habitant morbi tristique senectus et netus et malesuada
-            fames ac turpis egestas. Phasellus eu tristique lectus. Vivamus at
-            ligula quis lectus congue aliquet. Cras consectetur orci at sapien
-            pellentesque, ac feugiat purus viverra. Proin sed nisl condimentum,
-            interdum ipsum non, viverra orci. Nulla ac lorem tortor.
-            <br />
-            <br />
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            auctor, quam vel tristique interdum, velit urna ultrices risus, nec
-            consequat purus dui eget nisi. Suspendisse potenti. Fusce eget nisl
-            id tortor dapibus venenatis. Ut vestibulum, libero in fringilla
-            vestibulum, risus felis dictum purus, nec tincidunt ipsum orci a
-            dui. Nunc ut augue ac leo gravida semper. Quisque sodales, libero
-            sed convallis tristique, lectus mi fermentum urna, sit amet sagittis
-            nulla nisl vel metus. Nullam et quam nec libero fringilla hendrerit
-            et et mauris. Nullam a dolor eu odio semper auctor non quis nisi.
-            Nunc vel lacus et arcu gravida pharetra vel non massa. Ut luctus
-            bibendum sollicitudin.
-          </p>
-        </div>
-        <div className="about-img">
-          <Image
-            src="/stock-photo.jpg"
-            className="profile-img"
-            width={612}
-            height={408}
-            alt={""}
-          />
-        </div>
+      <h2 className="title">About Me</h2>
+      <div className="about-container">
+        <p className="text-left">
+          Hi! I'm a student from Northeastern University with a strong interest
+          in coding. At Northeastern, I've had the opportunity to learn about a
+          range of programming languages and tools. I've worked with languages
+          like JavaScript, TypeScript, Java, and Python. I've also spent time
+          getting to know web development frameworks such as React, Next.js,
+          Express, and Node.js. On the database side, I've familiarized myself
+          with MongoDB, SQL, and Prisma and have used design tools including
+          CSS, SASS, and Tailwind CSS. I also have experience with Sanity CMS.
+          <br />
+          <br />
+          While I've gained a good amount of experience, I see myself as an
+          ongoing learner, always eager to discover more. My portfolio, though
+          still growing, includes a few projects like an e-commerce storefront
+          API, games like Battleship, my personal website, and an agenda tool.
+          Each project represents a step in my learning journey at Northeastern.
+          I'm passionate about coding and am always looking to add more to my
+          skill set. My time at Northeastern has been about consistent learning,
+          and there's so much more I'm excited to explore.
+        </p>
+        <img src="about-photos/stock-image1.png" alt="Stock Photo" />
+      </div>
+      <div className="about-container">
+        <img src="about-photos/collaboration.webp" alt="Stock Photo" />
+        <p className="text-right">
+          In addition to my academic pursuits and personal projects,
+          collaboration has been a cornerstone of my growth at Northeastern.
+          Working alongside peers, I've come to appreciate the power of diverse
+          perspectives in problem-solving. I've been fortunate to be part of
+          coding groups and tech initiatives on campus, which have fostered an
+          environment of shared knowledge and mutual growth. These collective
+          experiences have not only fine-tuned my technical abilities but also
+          refined my interpersonal skills, emphasizing the importance of
+          effective communication in the realm of tech. <br />
+          <br />
+          Looking ahead, I'm keen on exploring the practical applications of my
+          skills in real-world scenarios. While I've built a strong foundation,
+          I believe the true test of a developer's mettle is in tackling
+          unforeseen challenges and adapting to ever-evolving technological
+          landscapes. Northeastern has instilled in me a deep sense of curiosity
+          and a relentless work ethic. As I continue my journey, my aim is not
+          only to excel as a developer but also to contribute positively to the
+          tech community, ensuring that my work resonates with purpose and
+          creates meaningful impacts.
+        </p>
+      </div>
+      <div className="about-container">
+        <p className="text-left">
+          As I delve deeper into the tech world, I am continually reminded of
+          the rapid pace of innovation. The tools and technologies I've learned
+          today may evolve tomorrow. It's this very unpredictability and
+          dynamism that fuels my passion. I find solace in the realization that,
+          in technology, there's always room to grow, always a new challenge to
+          tackle, and always an opportunity to reinvent and reimagine. At
+          Northeastern, I've been exposed not just to the technical facets but
+          also to the ethics and responsibilities that come with wielding such
+          knowledge. This has fostered a sense of balance in me, ensuring that
+          while I chase technological advancements, I remain grounded in my
+          commitment to use these tools for the betterment of society. <br />
+          <br />
+          In the coming years, I aspire to bridge the gap between what I've
+          learned and its practical implementation. I envision myself working on
+          projects that aren't just technically sophisticated but also socially
+          relevant. Whether it's developing tools to make online spaces more
+          inclusive, crafting platforms that democratize information, or
+          designing systems that address pressing global challenges, I aim to
+          blend my skills with purpose. With every line of code I write, I want
+          to inch closer to a world where technology amplifies positive change,
+          and my journey at Northeastern is a testament to this ambition.
+        </p>
+        <img src="about-photos/stock-photo.jpg" alt="Stock Photo" />
       </div>
     </>
   );
