@@ -17,15 +17,15 @@
 }
 
 body {
-  background-image: url("/about-photos/background.avif");
+  background-image: url("/about-photos/background.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  color: white;
-  margin: 10px 40px 10px 40px;
+  color: black;
+  /* margin: 10px 40px 10px 40px; */
 }
 
 hr {
   margin-top: 80px;;
-  border-color: white;
+  border-color: black;
 }

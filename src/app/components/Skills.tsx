@@ -19,8 +19,8 @@ const Skills = () => {
 
   return (
     <>
-      <div className="mt-60" />
-      <div className="flex flex-col items-center">
+      <div className="mt-40" />
+      <div className="flex flex-col items-center mx-10">
         <div className="flex items-center">
           <div className="w-1/3 mb-5">
             <h1 className="font-bold text-4xl text-slate-900 mb-8">

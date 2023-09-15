@@ -3,6 +3,7 @@
     font-weight: 700;
     font-size: 30px;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .about-container {
@@ -11,12 +12,12 @@
 }
 
 .about-container .text-left {
-    margin: 50px 75px 0 0;
+    margin: 50px 75px 0 20px;
 }
 
 .about-container .text-right {
     text-align: left;
-    margin: 50px 0 0 75px;
+    margin: 50px 20px 0 75px;
 }
 
 .about-container img {
@@ -24,5 +25,5 @@
     justify-content: center;
     height: auto;
     width: 450px;
-    margin: 20px 10px 20px 10px;
+    margin: 20px 20px 20px 20px;
 }

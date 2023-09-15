@@ -1,13 +1,20 @@
 .hero-container {
   display: flex;
   flex-direction: column;
+  background-image: url('/bg.jpg');
+  justify-content: center;
   align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 70%;
+  height: 620px;
+  transition: 0.1s linear;
 }
 
 .hero-container .text {
   text-align: center;
-  margin: 175px 50px 34px 50px;
-  color: white;
+  margin: 180px 50px 34px 50px;
+  color: #f1f5f9;
 }
 
 .hero-container .title {
@@ -21,13 +28,13 @@
   font-family: serif;
   font-size: large;
   padding: 16px 32px 16px 32px;
-  margin-top: 8px;
+  margin-top: 32px;
   margin-bottom: 120px;
   background-color: white;
   color: black;
 }
 
 .hero-container button:hover {
-  background-color: rgb(59 130 246);
+  background-color: #ef4444;
   color: white;
 }

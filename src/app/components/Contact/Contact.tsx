@@ -1,9 +1,9 @@
+"use client"
 import { useState } from "react";
 import FormPage from "../FormPage/FormPage";
 import './Contact.css';
 
 const Contact = () => {
-  "use client";
 
   const [isOpen, setIsOpen] = useState<boolean>(false);
 

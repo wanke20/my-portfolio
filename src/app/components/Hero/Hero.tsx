@@ -1,8 +1,25 @@
+"use client"
+import { useState, useEffect } from 'react';
 import './Hero.css';
 
 const Hero = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [backgroundSize, setBackgroundSize] = useState(100); // initial value
+
+  const handleScroll = () => setScrollPosition(window.pageYOffset);
+
+  useEffect(() => {
+    setBackgroundSize((window.outerHeight - scrollPosition) / 5 >= 100 
+      ? (window.outerHeight - scrollPosition) / 5: 100);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollPosition]);
+
   return (
-    <div className="hero-container">
+    <div style={{ backgroundSize: `${backgroundSize}%` }} className="hero-container">
       <div className="text">
         <h1 className="title">Hey, I'm Kenny!</h1>
         <p>
