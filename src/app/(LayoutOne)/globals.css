@@ -17,24 +17,19 @@
 }
 
 body {
-  color: rgb(var(--background-end-rgb));
+  color: rgb(var(--foreground-rgb));
   font-family: "Euclid Circular A", "Poppins";
   background: linear-gradient(
     to bottom,
-    /* rgb(24, 24, 27) 0%,
-    rgb(24, 24, 27) 34%, */
     white 0%,
-    white 62%,
-    rgb(24, 24, 27) 62%,
-    rgb(24, 24, 27) 100%
+    white 0%,
+    #09090b 0%,
+    #09090b 100%
   );
-
-  /* background-image: url("/about-photos/background.avif");
-  background-repeat: no-repeat; */
-  /* margin: 32px; */
+  /* background-color: #09090b; */
 }
 
 hr {
   margin-top: 80px;
-  border-color: white;
+  border-color: rgb(var(--background-start-rgb));
 }

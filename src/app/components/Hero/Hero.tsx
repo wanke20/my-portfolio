@@ -9,8 +9,8 @@ const Hero = () => {
   const handleScroll = () => setScrollPosition(window.pageYOffset);
 
   useEffect(() => {
-    setBackgroundSize((window.outerHeight - scrollPosition) / 5 >= 100 
-      ? (window.outerHeight - scrollPosition) / 5: 100);
+    setBackgroundSize((window.outerHeight - scrollPosition) / 4 >= 115 
+      ? (window.outerHeight - scrollPosition) / 4: 115);
     window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {

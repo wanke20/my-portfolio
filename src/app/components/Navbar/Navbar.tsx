@@ -1,21 +1,30 @@
 "use client";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const router = useRouter();
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
-  const scrollToSkills = () =>{
+  const scrollToAbout = () => {
     window.scrollTo({
-      top: 650, 
-      behavior: 'smooth'
+      top: 625,
+      behavior: "smooth",
     });
   };
 
-  const scrollToProjects = () =>{
+  const scrollToSkills = () => {
     window.scrollTo({
-      top: 1300, 
-      behavior: 'smooth'
+      top: 900,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollToProjects = () => {
+    window.scrollTo({
+      top: 1275,
+      behavior: "smooth",
     });
   };
 
@@ -51,7 +60,7 @@ const Navbar = () => {
         >
           <ul>
             <li>
-              <a href="/about">About</a>
+              <button onClick={scrollToAbout}>About</button>
             </li>
             <li>
               <button onClick={scrollToSkills}>Skills</button>
@@ -59,14 +68,9 @@ const Navbar = () => {
             <li>
               <button onClick={scrollToProjects}>Projects</button>
             </li>
-            {/* <li>
-              <a href="/projects">Projects</a>
-            </li> */}
           </ul>
         </div>
-        <button className="contact-button">
-          Contact Me
-        </button>
+        <button className="contact-button">Contact Me</button>
       </nav>
     </header>
   );

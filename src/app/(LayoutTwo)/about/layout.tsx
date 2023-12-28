@@ -1,5 +1,5 @@
 import "./globals.css";
-import Footer from "@/app/components/Footer";
+import Footer from "@/app/components/Footer/Footer";
 import Navbar from "@/app/components/Navbar/Navbar";
 
 export default function RootLayout({

@@ -1,10 +1,11 @@
 "use client";
+import './Footer.css';
 
 const Footer = () => {
   return (
     <>
       <hr />
-      <div className="mt-10">
+      <div className="footer">
         <p>© {new Date().getFullYear()} Kenneth's Portfolio</p>
         <div>
           <a
