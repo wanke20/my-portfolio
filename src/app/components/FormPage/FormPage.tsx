@@ -43,7 +43,19 @@ const FormPage = () => {
   return (
     <div>
       <div className="StyledContactForm">
-        <form ref={form} onSubmit={sendEmail}>
+        <div className="first-child">
+          <h1>Name:</h1>
+          <p>Kenneth Wan</p>
+        </div>
+        <div className="other-child">
+          <h1>Email:</h1>
+          <p>kennethwan20@gmail.com</p>
+        </div>
+        <div className="other-child">
+          <h1>Phone Number:</h1>
+          <p>{"(508)-361-5838"}</p>
+        </div>
+        {/* <form ref={form} onSubmit={sendEmail}>
           <label>Name</label>
           <input type="text" name="user_name" />
           <label>Email</label>
@@ -55,9 +67,9 @@ const FormPage = () => {
             value="Submit"
             onClick={() => setShowPopup(true)}
           />
-        </form>
+        </form> */}
       </div>
-      {showPopup && <SuccessPopup />}
+      {/* {showPopup && <SuccessPopup />} */}
     </div>
   );
 };

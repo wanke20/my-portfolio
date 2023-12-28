@@ -41,7 +41,7 @@ const projectData = [
     description:
       "A simple Battleship game which uses command-line prompts. Can be played between two people or against the computer.",
     gitHubLink: "https://github.com/olawanlejoel/TwitterUI-clone",
-    image: "bg.jpeg",
+    image: "battleship.png",
   },
   {
     title: "Maze Game",

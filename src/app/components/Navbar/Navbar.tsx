@@ -1,6 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import Contact from "@/app/components/Contact/Contact";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -70,7 +71,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <button className="contact-button">Contact Me</button>
+        <Contact />
       </nav>
     </header>
   );
