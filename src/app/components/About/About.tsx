@@ -15,9 +15,7 @@ const About = () => {
             On the database side, I've familiarized myself with MongoDB and SQL
             and design tools including CSS, SASS, and Tailwind CSS. While I've
             gained a good amount of experience, I see myself as an ongoing
-            learner, always eager to discover more! In my spare time, I enjoy
-            participating in hackathons, following sports like football and
-            basketball, and playing chess.
+            learner, always eager to discover more!
           </p>
         </div>
         <a
