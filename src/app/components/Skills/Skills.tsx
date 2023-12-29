@@ -2,18 +2,18 @@
 import "./Skills.css";
 
 const skillList = [
-  { name: "JavaScript", logo: "logos/js-logo.png" },
-  { name: "TypeScript", logo: "logos/ts-logo.jpeg" },
-  { name: "Java", logo: "logos/java-logo.png" },
-  { name: "Python", logo: "logos/python-logo.png" },
-  { name: "React", logo: "logos/react-logo.png" },
-  { name: "NextJS", logo: "logos/nextjs-logo.webp" },
-  { name: "NodeJS", logo: "logos/nodejs-logo.webp" },
-  { name: "MongoDB", logo: "logos/mongodb-logo.png" },
-  { name: "MySQL", logo: "logos/mysql-logo.png" },
-  { name: "CSS", logo: "logos/css-logo.webp" },
-  { name: "SASS", logo: "logos/sass-logo.png" },
-  { name: "TailwindCSS", logo: "logos/tailwind-logo.png" },
+  { id: 1, name: "JavaScript", logo: "logos/js-logo.png" },
+  { id: 2, name: "TypeScript", logo: "logos/ts-logo.jpeg" },
+  { id: 3, name: "Java", logo: "logos/java-logo.png" },
+  { id: 4, name: "Python", logo: "logos/python-logo.png" },
+  { id: 5, name: "React", logo: "logos/react-logo.png" },
+  { id: 6, name: "NextJS", logo: "logos/nextjs-logo.webp" },
+  { id: 7, name: "NodeJS", logo: "logos/nodejs-logo.webp" },
+  { id: 8, name: "MongoDB", logo: "logos/mongodb-logo.png" },
+  { id: 9, name: "MySQL", logo: "logos/mysql-logo.png" },
+  { id: 10, name: "CSS", logo: "logos/css-logo.webp" },
+  { id: 11, name: "SASS", logo: "logos/sass-logo.png" },
+  { id: 12, name: "TailwindCSS", logo: "logos/tailwind-logo.png" },
 ];
 
 const Skills = () => {
@@ -28,7 +28,7 @@ const Skills = () => {
       </div>
       <div className="skills-container">
         {skillList && skillList.map((skill) => 
-          <div className="skills-card">
+          <div key={skill.id} className="skills-card">
             <img src={skill.logo} />
             <h1>{skill.name}</h1>
           </div>
