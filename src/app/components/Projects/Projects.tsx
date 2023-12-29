@@ -54,8 +54,8 @@ const projectData = [
 
 const Projects: React.FC = () => {
   return (
-    <div className="flex flex-col items-center">
-      <h2 className="flex mb-10 text-white text-4xl font-bold">
+    <div className="projects">
+      <h2 className="title">
         Projects
       </h2>
       <div className="item-container">

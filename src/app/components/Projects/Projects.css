@@ -1,23 +1,41 @@
-.item-container {
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #18181b;
+  width: 860px;
+
+  margin: 0px 290px 0px 290px;
+}
+
+.projects .title {
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 15px 0 20px 0;
+}
+
+.projects .item-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
   /* width: 850px; */
   /* gap: 1rem; */
-  margin: 0px;
+  margin-bottom: 30px;
   /* margin: 0 300px 0 300px; */
 }
 
-.item {
+.projects .item-container .item {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  height: 250px;
+  height: 180px;
   width: 400px;
-  padding: 10px;
+  padding: 0 10px 10px 10px;
   color: #ffffff;
-  margin: 8px;
+  /* margin: 8px; */
 }
 
 /* The magic part: applying auto margins to the last child */

@@ -18,19 +18,15 @@ const skillList = [
 
 const Skills: React.FC = () => {
   return (
-    <div className="flex flex-col items-center">
-      <div className="flex items-center justify-center">
-        <div className="justify-center mb-5">
-          <h1 className="flex justify-center font-bold text-4xl text-white">
-            My Skills
-          </h1>
-        </div>
-      </div>
+    <div className="skills">
+      <h1 className="title">
+        My Skills
+      </h1>
       <div className="skills-container">
         {skillList && skillList.map((skill) => 
           <div key={skill.id} className="skills-card">
             <img src={skill.logo} />
-            <h1>{skill.name}</h1>
+            <p>{skill.name}</p>
           </div>
         )}
       </div>

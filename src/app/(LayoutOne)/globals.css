@@ -29,6 +29,10 @@ body {
   /* background-color: #09090b; */
 }
 
+div {
+  justify-content: center;
+}
+
 hr {
   margin-top: 80px;
   border-color: rgb(var(--background-start-rgb));

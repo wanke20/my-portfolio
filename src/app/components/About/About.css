@@ -1,76 +1,87 @@
 .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-.title {
-  display: flex;
-  font-weight: 700;
-  font-size: 30px;
-  justify-content: center;
-  margin-top: 100px;
-  font-family: "sans";
-  color: #ffffff;
-  font-size: 36px;
-  line-height: 40px;
-}
-
-.about-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center;
+  justify-content: center; */
+  /* margin-bottom: 50px; */
+
   border-radius: 5px;
   padding: 15px 10px 15px 10px;
   border-radius: 5px;
   background-color: #18181b;
 
-  color: black;
-  justify-content: center;
-  margin: 25px 200px 25px 200px;
+  /* height: 300px; */
+  margin: 50px 290px 30px 290px;
+  width: 860px;
 }
 
-.about-container .description {
+.about .title {
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  /* margin-top: 100px; */
+  font-family: "sans";
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 40px;
+  margin-top: 10px;
+}
+
+.about .about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border-radius: 5px;
+  padding: 15px 10px 15px 10px;
+  border-radius: 5px;
+  background-color: #18181b; */
+
+  color: black;
+  justify-content: center;
+  margin: 15px 200px 25px 200px;
+}
+
+.about .about-container .description {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 975px;
+  width: 800px;
   height: auto;
+  margin-right: -84px;
 }
 
-.about-container .text-left {
-  margin: 0 100px 0 30px;
-  width: 900px;
+.about .about-container .text-left {
+  margin: 0 100px 0 20px;
+  width: 800px;
   height: auto;
   font-family: "Alright Sans";
   color: white;
 }
 
-.about-container img {
+.about .about-container img {
   align-items: center;
   justify-content: center;
   height: 125px;
-  width: 125px;
+  width: auto;
   margin: 10px 0 0 20px;
   border-radius: 100px;
 }
 
 .about a {
-    border-radius: 14px;
-    font-family: serif;
-    font-size: large;
-    padding: 10px 20px 10px 20px;
-    margin: 4px 0 10px 0;
-    background-color: #fcd34d;
-    color: black;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .about a:hover {
-    background-color: #7F00FF;
-    color: #f5f5f4;
-    /* margin-bottom: 500px; */
-  }
+  border-radius: 14px;
+  font-family: serif;
+  font-size: large;
+  padding: 8px 16px 8px 16px;
+  margin: 10px 0 -15px 0;
+  background-color: #fcd34d;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+.about a:hover {
+  background-color: #6d28d9;
+  color: #f5f5f4;
+  /* margin-bottom: 500px; */
+}
