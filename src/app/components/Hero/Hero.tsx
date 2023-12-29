@@ -28,9 +28,14 @@ const Hero = () => {
           for building web applications using React and Next.js.
         </p>
       </div>
-      <button>
-        Click to Download Resume →
-      </button>
+      <a
+        href="/resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Click to Review Resume →</a>
+      {/* <button>
+        Click to Review Resume →
+      </button> */}
     </div>
   );
 };

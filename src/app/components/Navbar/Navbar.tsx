@@ -17,14 +17,14 @@ const Navbar = () => {
 
   const scrollToSkills = () => {
     window.scrollTo({
-      top: 900,
+      top: 1050,
       behavior: "smooth",
     });
   };
 
   const scrollToProjects = () => {
     window.scrollTo({
-      top: 1275,
+      top: 1500,
       behavior: "smooth",
     });
   };

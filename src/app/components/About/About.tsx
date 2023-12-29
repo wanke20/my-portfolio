@@ -24,7 +24,11 @@ const About = () => {
           playing chess.
         </p>
       </div>
-      <button>See My Github Profile</button>
+      <a 
+        href="https://github.com/wanke20" 
+        aria-label="GitHub"
+        target="_blank"
+        rel="noopener noreferrer">See My Github Profile</a>
     </div>
   );
 };

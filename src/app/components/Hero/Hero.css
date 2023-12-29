@@ -39,3 +39,19 @@
   background-color: #ef4444;
   color: white;
 }
+
+.hero-container a {
+  border-radius: 9999px;
+  font-family: serif;
+  font-size: large;
+  padding: 16px 32px 16px 32px;
+  margin-top: 32px;
+  margin-bottom: 120px;
+  background-color: white;
+  color: black;
+}
+
+.hero-container a:hover {
+  background-color: #ef4444;
+  color: white;
+}

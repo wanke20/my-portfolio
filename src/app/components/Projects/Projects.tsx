@@ -12,7 +12,7 @@ const projectData = [
     title: "Books Library App",
     description:
       "A simple Book Library App built with JavaScript. It helps readers have a good list of books they are either currently reading or have finished reading.",
-    gitHubLink: "https://github.com/debsouryadatta/academiax",
+    gitHubLink: "https://github.com/wanke20/edunest",
     image: "books-app.png",
   },
   // {
@@ -40,14 +40,14 @@ const projectData = [
     title: "Battleship Game",
     description:
       "A simple Battleship game which uses command-line prompts. Can be played between two people or against the computer.",
-    gitHubLink: "https://github.com/olawanlejoel/TwitterUI-clone",
+    gitHubLink: "https://github.com/CS-3500-OOD/pa03-wanke20",
     image: "battleship.png",
   },
   {
     title: "Maze Game",
     description:
       "Generates a maze for the player to solve. A solution can be provided by the computer, if the player wishes to see it.",
-    gitHubLink: "",
+    // gitHubLink: "",
     image: "bg.png"
   }
 ];
@@ -55,7 +55,7 @@ const projectData = [
 const Projects: React.FC = () => {
   return (
     <div className="flex flex-col items-center">
-      <h2 className="flex justify-center mb-12 text-white text-4xl font-bold">
+      <h2 className="flex justify-center mb-10 text-white text-4xl font-bold">
         Projects
       </h2>
       <div className="item-container">
