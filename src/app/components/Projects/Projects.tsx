@@ -46,7 +46,7 @@ const projectData = [
   {
     title: "Maze Game",
     description:
-      "Generates a maze for the player to solve. A solution can be provided by the computer, if the player wishes to see it.",
+      "Generates a maze for the player to solve, based on a choice of sizes. A solution can be provided by the computer, if the player wishes to see it.",
     // gitHubLink: "",
     image: "bg.png"
   }
@@ -54,7 +54,8 @@ const projectData = [
 
 const Projects: React.FC = () => {
   return (
-    <div className="projects">
+    <div className="projects-outline">
+      <div className="projects">
       <h2 className="title">
         Projects
       </h2>
@@ -79,6 +80,7 @@ const Projects: React.FC = () => {
             </div>
           ))}
       </div>
+    </div>
     </div>
   );
 };

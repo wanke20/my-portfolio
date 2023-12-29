@@ -18,21 +18,22 @@ const skillList = [
 
 const Skills: React.FC = () => {
   return (
-    <div className="skills">
-      <h1 className="title">
-        My Skills
-      </h1>
-      <div className="skills-container">
-        {skillList && skillList.map((skill) => 
-          <div key={skill.id} className="skills-card">
-            <img src={skill.logo} />
-            <p>{skill.name}</p>
-          </div>
-        )}
-      </div>
-      {/* <button className="skills-button">
+    <div className="skills-outline">
+      <div className="skills">
+        <h1 className="title">My Skills</h1>
+        <div className="skills-container">
+          {skillList &&
+            skillList.map((skill) => (
+              <div key={skill.id} className="skills-card">
+                <img src={skill.logo} />
+                <p>{skill.name}</p>
+              </div>
+            ))}
+        </div>
+        {/* <button className="skills-button">
         See My Work History
       </button> */}
+      </div>
     </div>
   );
 };

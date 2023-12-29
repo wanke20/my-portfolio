@@ -10,7 +10,7 @@
   height: 620px;
   transition: 0.1s linear;
 
-  width: 1460px;
+  width: auto;
 }
 
 .hero-container .text {

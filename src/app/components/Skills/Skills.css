@@ -1,13 +1,21 @@
+.skills-outline {
+  display: flex;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px
+}
+
 .skills {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
   background-color: #18181b;
   align-items: center;
-  margin: 30px 290px 30px 290px;
+  /* margin: 30px 290px 30px 290px; */
 
   height: 370px;
-  width: 860px;
+  width: 870px;
   /* padding: px; */
 }
 
