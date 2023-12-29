@@ -69,9 +69,9 @@ const Navbar = () => {
             <li>
               <button onClick={scrollToProjects}>Projects</button>
             </li>
+            <Contact />
           </ul>
         </div>
-        <Contact />
       </nav>
     </header>
   );

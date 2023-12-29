@@ -16,9 +16,9 @@ const skillList = [
   { id: 12, name: "TailwindCSS", logo: "logos/tailwind-logo.png" },
 ];
 
-const Skills = () => {
+const Skills: React.FC = () => {
   return (
-    <div className="flex flex-col items-center mx-10">
+    <div className="flex flex-col items-center">
       <div className="flex items-center justify-center">
         <div className="justify-center mb-5">
           <h1 className="flex justify-center font-bold text-4xl text-white">
