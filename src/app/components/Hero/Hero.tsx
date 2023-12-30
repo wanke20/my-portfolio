@@ -19,8 +19,8 @@ const Hero = () => {
   }, [scrollPosition]);
 
   return (
-    <div style={{ backgroundSize: `${backgroundSize}%` }} className="hero-container">
-      <div className="text">
+    <div style={{ backgroundSize: `${backgroundSize}%` }} className="hero-outline">
+      <div className="hero-container">
         <h1 className="title">Hey, I'm Kenny!</h1>
         <p>
           I'm a Computer Science undergrad at Northeastern University. I

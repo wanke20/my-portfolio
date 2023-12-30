@@ -37,34 +37,31 @@
 }
 
 .navigation-menu {
-  display: flex;
+  /* display: flex; */
   margin-left: auto;
   margin-right: 18px;
 }
 
 .navigation-menu ul {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
   padding: 0;
 }
 
 .navigation-menu li {
   list-style-type: none;
-  margin: 0 1rem;
+  margin: 5px 1rem;
 }
 
-.navigation-menu li a {
-  text-decoration: none;
-  display: block;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.navigation-menu button {
+.navigation-menu li button {
   display: flex;
   margin-left: auto;
+}
+
+.navigation-menu .contact {
+  margin-left: 10px;
 }
 
 .hamburger {
@@ -119,9 +116,16 @@
     background-color: #eee;
   }
   .navigation-menu.expanded ul {
-    display: block;
+    display: flex;
+    height: 500px;
+    background-color: white;
+    color: black;
+    align-items: center;
+    justify-content: start;
   }
-  .navigation-menu button {
-    display: none;
+  .navigation-menu.expanded li button {
+    display: block;
+    margin: 8px 0 8px 0;
+    width: 700px;
   }
 }

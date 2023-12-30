@@ -69,7 +69,7 @@ const Navbar = () => {
             <li>
               <button onClick={scrollToProjects}>Projects</button>
             </li>
-            <Contact />
+            <div className="contact">{!isNavExpanded && <Contact />}</div>
           </ul>
         </div>
       </nav>
