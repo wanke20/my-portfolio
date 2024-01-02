@@ -88,7 +88,7 @@
     /* margin: 30px 290px 30px 290px; */
 
     height: auto;
-    width: 550px;
+    width: 600px;
     /* padding: px; */
   }
 
@@ -108,7 +108,43 @@
 
     border-radius: 5px;
     height: auto;
-    width: 500px;
+    width: 490px;
+    padding: 5px 0 5px 10px;
+    margin: 0 10px 40px 0;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #18181b;
+    align-items: center;
+    /* margin: 30px 290px 30px 290px; */
+
+    height: auto;
+    width: 325px;
+    /* padding: px; */
+  }
+
+  .skills-title {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 30px 0 15px 0;
+  }
+
+  .skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+    height: auto;
+    width: 275px;
     padding: 5px 0 5px 10px;
     margin: 0 10px 40px 0;
   }
