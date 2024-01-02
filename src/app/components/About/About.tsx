@@ -5,9 +5,9 @@ const About = () => {
     <div className="about-outline">
       <div className="about-container">
         <h2 className="title">About Me</h2>
-        <div className="description">
+        <div className="profile">
           <img src="profile.jpeg" alt="Stock Photo" />
-          <p className="text-left">
+          <p className="profile-text">
             I'm a student from Northeastern University with a strong interest
             for coding. I've worked with languages like JavaScript, TypeScript,
             Java, and Python. I've also spent time getting to know web

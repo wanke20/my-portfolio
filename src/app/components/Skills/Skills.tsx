@@ -20,7 +20,7 @@ const Skills: React.FC = () => {
   return (
     <div className="skills-outline">
       <div className="skills">
-        <h1 className="title">My Skills</h1>
+        <h1 className="skills-title">My Skills</h1>
         <div className="skills-container">
           {skillList &&
             skillList.map((skill) => (

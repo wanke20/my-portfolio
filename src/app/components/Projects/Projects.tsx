@@ -2,11 +2,12 @@ import "./Projects.css";
 
 const projectData = [
   {
-    title: "Todo List App",
+    title: "Expense Tracker",
     description:
-      "A simple Todo List App built with JavaScript. All datas are stored in localstorage. It helps users check list out their plans and tick as they do them.",
-    gitHubLink: "https://github.com/wanke20/next-13-todo-list",
-    image: "schedule-app.png",
+      "A simple Expense Tracker App built with TypeScript, using Firebase to store data. Allows users to input and track total expenses.",
+    link: "https://expense-tracker-seven-weld.vercel.app/",
+    gitHubLink: "https://github.com/wanke20/expense-tracker",
+    image: "expense-tracker.png",
   },
   {
     title: "Books Library App",
@@ -15,27 +16,6 @@ const projectData = [
     gitHubLink: "https://github.com/wanke20/edunest",
     image: "books-app.png",
   },
-  // {
-  //   title: "Quotes Generator",
-  //   description:
-  //     "Helps you generate quotes from about 1600 quotes written by different authors . Quotes are automatically copied to your clipboards.",
-  //   gitHubLink: "https://github.com/olawanlejoel/random-quote-generator",
-  //   image: "bg.webp",
-  // },
-  //  {
-  //   title: "Password Generator",
-  //   description:
-  //     "Helps you generates random passwords, you can select what you want your password to entail and also you can copy generated password to clipboard.",
-  //   gitHubLink: "https://github.com/olawanlejoel/Password-Generator",
-  //   image: "bg.png",
-  // },
-  // {
-  //   title: "Twitter UI Clone",
-  //   description:
-  //     "Simple Twitter UI clone built with TailwindCSS and Vue Js. This covers only the homepage of Twitter UI. This is cool to get started with TailwindCSS as it helps understand basic concepts.",
-  //   gitHubLink: "https://github.com/olawanlejoel/TwitterUI-clone",
-  //   image: "bg.jpeg",
-  // },
   {
     title: "Battleship Game",
     description:
@@ -56,7 +36,7 @@ const Projects: React.FC = () => {
   return (
     <div className="projects-outline">
       <div className="projects">
-      <h2 className="title">
+      <h2 className="projects-title">
         Projects
       </h2>
       <div className="item-container">
@@ -68,7 +48,9 @@ const Projects: React.FC = () => {
               style={{ backgroundImage: `url(${project.image})` }}
             >
               <div className="flex justify-between project-header bg-fixed">
-                <i className="fa-regular fa-folder-open folder-icon"></i>
+                <a href={project.link}>
+                  <i className="fa-regular fa-folder-open folder-icon"></i>
+                </a>
                 <div className="small-icons">
                   <a href={project.gitHubLink}>
                     <i className="fa-brands fa-github"></i>
