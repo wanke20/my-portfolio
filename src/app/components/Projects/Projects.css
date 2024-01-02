@@ -81,23 +81,13 @@
   }
 }
 
-@media screen and (max-width: 355px) {
+@media screen and (max-width: 405px) {
   .projects {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #18181b;
-    width: 325px;
-  }
-
-  .item-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    align-items: center;
-    justify-content: start;
-    
-    margin-bottom: 30px;
+    width: 375px;
   }
 
   .item {
@@ -106,7 +96,7 @@
     /* align-items: start; */
     border-radius: 5px;
     height: 180px;
-    width: 275px;
+    width: 325px;
     padding: 0 10px 10px 10px;
     color: #ffffff;
     /* margin: 8px; */
