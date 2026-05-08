@@ -1,17 +1,30 @@
-import Hero from "@/app/components/Hero/Hero";
-import Skills from "@/app/components/Skills/Skills";
-import Projects from "@/app/components/Projects/Projects";
-import About from "@/app/components/About/About";
+import About from "@/app/components/About";
+import Hero from "@/app/components/Hero";
+import Projects from "@/app/components/Projects";
+import Reveal from "@/app/components/Reveal";
+import Skills from "@/app/components/Skills";
 
 export default function Home() {
   return (
-    <>
-      <div>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
+    <main id="main">
+      <Hero />
+      <div className="card-container">
+        <section id="about">
+          <Reveal>
+            <About />
+          </Reveal>
+        </section>
+        <section id="skills">
+          <Reveal delay={80}>
+            <Skills />
+          </Reveal>
+        </section>
+        <section id="projects">
+          <Reveal delay={160}>
+            <Projects />
+          </Reveal>
+        </section>
       </div>
-    </>
+    </main>
   );
 }
