@@ -7,7 +7,6 @@ const sections = ["about", "skills", "projects"] as const;
 type SectionId = (typeof sections)[number];
 
 const Navbar = () => {
-  const [isNavExpanded, setIsNavExpanded] = useState(false);
   const [activeSection, setActiveSection] = useState<SectionId | null>(null);
   const [scrolled, setScrolled] = useState(false);
 
@@ -42,13 +41,10 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const closeMenu = () => setIsNavExpanded(false);
-
   const renderNavLink = (id: SectionId, label: string) => (
     <li key={id}>
       <a
         href={`/#${id}`}
-        onClick={closeMenu}
         className={activeSection === id ? "nav-active" : undefined}
         aria-current={activeSection === id ? "true" : undefined}
       >
@@ -64,47 +60,22 @@ const Navbar = () => {
         aria-label="Primary"
       >
         <Link href="/" className="brand-name">
-          Kenneth's Portfolio
+          Kenneth&apos;s Portfolio
         </Link>
-        <button
-          type="button"
-          className={`hamburger${isNavExpanded ? " hamburger-active" : ""}`}
-          aria-label={isNavExpanded ? "Close navigation menu" : "Open navigation menu"}
-          aria-expanded={isNavExpanded}
-          aria-controls="primary-navigation"
-          onClick={() => setIsNavExpanded(!isNavExpanded)}
-        >
-          <span className="hamburger-bar" aria-hidden="true" />
-          <span className="hamburger-bar" aria-hidden="true" />
-          <span className="hamburger-bar" aria-hidden="true" />
-        </button>
-        <div
-          id="primary-navigation"
-          className={
-            isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
-          }
-        >
-          <ul>
+        <div className="nav-right">
+          <ul className="nav-links">
             {renderNavLink("about", "About")}
             {renderNavLink("skills", "Skills")}
             {renderNavLink("projects", "Projects")}
-            {/* <li>
-              <Link href="/contacts" onClick={closeMenu}>
-                Contacts
-              </Link>
-            </li> */}
-            <li>
-              <a
-                href="/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={closeMenu}
-                className="navbar-resume"
-              >
-                Resume
-              </a>
-            </li>
           </ul>
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="navbar-resume"
+          >
+            Resume
+          </a>
         </div>
       </nav>
     </header>
