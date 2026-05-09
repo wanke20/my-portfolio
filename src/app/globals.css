@@ -59,8 +59,11 @@ div {
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04) inset,
     0 8px 24px rgba(0, 0, 0, 0.25);
 
-  width: 870px;
+  width: min(870px, calc(100vw - 64px));
+  max-width: 100%;
   height: auto;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 .card-outline .rigid-button {
   display: inline-flex;
@@ -325,9 +328,10 @@ div {
 
   border-radius: 5px;
   height: auto;
-  width: 830px;
+  width: 100%;
   padding: 8px 14px 12px;
-  margin: 0 10px 8px 0;
+  margin: 0 0 8px;
+  box-sizing: border-box;
 }
 .skills-card {
   display: inline-flex;
@@ -384,16 +388,18 @@ div {
   flex-direction: column;
   align-items: center;
   background-color: #18181b;
-  width: 870px;
+  width: 100%;
 }
 .item-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  align-items: center;
+  align-items: stretch;
   justify-content: start;
-
+  width: 100%;
   margin-bottom: 30px;
+  box-sizing: border-box;
+  padding: 0 12px;
 }
 .item {
   display: flex;
@@ -401,12 +407,13 @@ div {
   border-radius: 10px;
   height: auto;
   min-height: 200px;
-  width: 375px;
+  width: 100%;
   padding: 18px 20px 20px;
   color: #f5f5f5;
   background: linear-gradient(135deg, #1c1c1f 0%, #18181b 100%);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05) inset;
+  box-sizing: border-box;
 }
 .item-title {
   font-size: 1.05rem;
@@ -515,18 +522,6 @@ div {
   }
 
   /* about page */
-  .about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
-    padding: 15px 10px 15px 10px;
-    border-radius: 5px;
-    background-color: #18181b;
-
-    width: 600px;
-    height: auto;
-  }
   .profile {
     display: flex;
     flex-direction: column;
@@ -546,7 +541,7 @@ div {
   }
   .profile-text {
     width: auto;
-    max-width: 490px;
+    max-width: 100%;
   }
   .profile img {
     width: 140px;
@@ -555,62 +550,9 @@ div {
     border-radius: 50%;
   }
 
-  /* skills section */
-  .skills {
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-    background-color: #18181b;
-    align-items: center;
-
-    height: auto;
-    width: 600px;
-  }
-  .skills-title {
-    color: white;
-    font-size: 36px;
-    font-weight: bold;
-    margin: 30px 0 15px 0;
-  }
-  .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.55rem;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 5px;
-    height: auto;
-    width: 490px;
-    padding: 8px 12px 12px;
-    margin: 0 10px 8px 0;
-  }
-
   /* projects section */
-  .projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #18181b;
-    width: 600px;
-  }
   .item-container {
-    display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
-    align-items: center;
-    justify-content: start;
-
-    margin-bottom: 30px;
-  }
-  .item {
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-    height: 180px;
-    width: 490px;
-    padding: 0 10px 10px 10px;
-    color: #ffffff;
   }
 }
 
@@ -627,65 +569,16 @@ div {
 }
 
 @media screen and (max-width: 405px) {
-  /* about section */
-  .about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
-    padding: 15px 10px 15px 10px;
-    border-radius: 5px;
-    background-color: #18181b;
-
-    width: 375px;
-    height: auto;
-  }
   .profile-text {
     width: auto;
-    max-width: 325px;
-  }
-
-  /* skills section */
-  .skills {
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-    background-color: #18181b;
-    align-items: center;
-
-    height: auto;
-    width: 375px;
+    max-width: 100%;
   }
   .skills-container {
-    display: flex;
-    flex-wrap: wrap;
     gap: 0.5rem;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 5px;
-    height: auto;
-    width: 325px;
     padding: 8px 12px 10px;
-    margin: 0 10px 8px 0;
   }
-
-  /* projects section */
-  .projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #18181b;
-    width: 375px;
-  }
-  .item {
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-    height: 180px;
-    width: 325px;
-    padding: 0 10px 10px 10px;
-    color: #000;
+  .item-container {
+    padding: 0 8px;
   }
 }
 
