@@ -14,7 +14,7 @@ const skillList = [
   { id: 11, name: "CSS", logo: "/logos/css-logo.webp" },
   { id: 12, name: "SASS", logo: "/logos/sass-logo.png" },
   { id: 13, name: "Tailwind", logo: "/logos/tailwind-logo.png" },
-  { id: 14, name: "Django", logo: "/logos/django-logo.svg" },
+  { id: 14, name: "Django", logo: "/logos/django-logo.png" },
   { id: 15, name: "PyTorch", logo: "/logos/pytorch-logo.png" },
   { id: 16, name: "R", logo: "/logos/r-logo.png" },
   { id: 17, name: "Sklearn", logo: "/logos/sklearn-logo.png" },
