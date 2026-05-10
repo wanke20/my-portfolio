@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { BsGithub } from "react-icons/bs";
 
 const sections = ["about", "skills", "projects"] as const;
 type SectionId = (typeof sections)[number];
@@ -68,6 +69,15 @@ const Navbar = () => {
             {renderNavLink("skills", "Skills")}
             {renderNavLink("projects", "Projects")}
           </ul>
+          <a
+            href="https://github.com/wanke20/my-portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View source on GitHub"
+            className="nav-github"
+          >
+            <BsGithub aria-hidden />
+          </a>
           <a
             href="/resume.pdf"
             target="_blank"

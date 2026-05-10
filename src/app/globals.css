@@ -176,6 +176,22 @@ div {
   list-style: none;
   margin: 0;
 }
+.nav-github {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #d4d4d8;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.nav-github:hover {
+  color: #fcd34d;
+  transform: translateY(-1px);
+}
+.nav-github svg {
+  width: 20px;
+  height: 20px;
+}
 
 /* hero page */
 .hero-outline {
